@@ -3,14 +3,14 @@
 ## Clone this repository
 Run the code below in your directory.
 ~~~
-git clone https://github.com/KatsukiFujimoto/rails-dev-template.git
+git clone https://github.com/KatsukiFujimoto/rails-dev-template-for-windows.git
 ~~~
 
 ## Customize the repository as you want
 If you want to rename the repository, run the code below
 ~~~
-mv rails-dev-template [your app name]
-cd rails-dev-template / [your app name]
+mv rails-dev-template-for-windows [your app name]
+cd rails-dev-template-for-windows / [your app name]
 ~~~
 
 If you want to change the env file, edit the file in containers directory as you want
