@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: containers/rails/Dockerfile
     env_file: containers/env
-    command: bash -c "rails assets:precompile db:create db:migrate && pumactl -F ./containers/rails/puma.rb start"
+    command: bash -c "rails db:create db:migrate && pumactl -F ./containers/rails/puma.rb start"
     volumes:
       - .:/webapp:cached
       - public-data:/webapp/public
