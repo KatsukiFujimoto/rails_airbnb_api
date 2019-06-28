@@ -38,7 +38,7 @@ class Api::V1::ReservationsController < ApplicationController
   def reservations_by_room
     reservations = Reservation.where(room_id: params[:id])
     reservations = reservations.map { |r| ReservationSerializer.new(r, avatar_url: r.user.image) }
-    render json: { reservation: reservations, is_success: true }, status: :ok
+    render json: { reservations: reservations, is_success: true }, status: :ok
   end
 
   def approve
